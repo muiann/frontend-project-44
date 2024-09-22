@@ -5,8 +5,8 @@
   "description": "[![Actions Status](https://github.com/muiann/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/muiann/frontend-project-44/actions)",
   "main": "index.js",
   "bin": {
-  "brain-games": "bin/brain-games.js"
-},
+    "brain-games": "bin/brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/muiann/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/muiann/frontend-project-44#readme"
+  "homepage": "https://github.com/muiann/frontend-project-44#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.11.0",
+    "eslint": "^9.11.0",
+    "globals": "^15.9.0",
+    "extends": "./.eslintrc.json"
+  },
+    "parserOptions": {
+    "sourceType": "module"
+  }
+  
 }
