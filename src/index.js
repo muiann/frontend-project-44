@@ -1,10 +1,11 @@
 
 import readlineSync from 'readline-sync';
 import {greetings} from './games/brain-calc-lib.js';
+import { whenError } from './games/brain-gcd-lib.js';
 
    console.log('Welcome to the Brain Games!');
 
-    let userName = readlineSync.question('May I have your name? ');
+    export let userName = readlineSync.question('May I have your name? ');
     console.log('Hello ' + userName + '!');
     
     console.log(greetings);
@@ -17,9 +18,9 @@ import {greetings} from './games/brain-calc-lib.js';
 
     while(rightAnswer < 3){
 
-        let params = generatParams();
+      let params = generatParams();
 
-        let question = generatQuestion(params);
+      let question = generatQuestion(params);
 
       console.log('Question: ', question);
 
@@ -33,7 +34,8 @@ import {greetings} from './games/brain-calc-lib.js';
       } else {
         rightAnswer = 0;
         console.log(`${'"'}${userAnswer}${'"'}${' is wrong answer ;(. Correct answer was '}${'"'}${expectAnswer}${'"'}`);
-        }
+        console.log(whenError);  
+      }
       
     } 
      console.log('Congratulations, ' + userName + '!');

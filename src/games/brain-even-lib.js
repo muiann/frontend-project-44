@@ -1,7 +1,3 @@
-//const arrActions = ['+', '*', '-'];
-
-//const getRandomAction = () => Math.floor(Math.random()*arrActions.length);
-
 export const generatParams = () => Math.floor(Math.random()* (100-1)+1); 
 
 export const calcAnswer = (params) => {
