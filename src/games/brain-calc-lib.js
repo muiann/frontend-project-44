@@ -1,3 +1,5 @@
+import { userName } from "../index.js";
+
 const arrActions = ['+', '*', '-'];
 
 const getRandomAction = () => Math.floor(Math.random()*arrActions.length);
@@ -36,3 +38,5 @@ export const calcAnswer = (params) => {
     }
 
 export let greetings = 'What is the result of the expression?';
+
+export let whenError = `${"Let's try again, "}${userName}${"!"}`;
