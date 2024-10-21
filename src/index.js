@@ -1,18 +1,18 @@
 
 import readlineSync from 'readline-sync';
-import {greetings} from './games/brain-calc-lib.js';
-import { whenError } from './games/brain-gcd-lib.js';
 
-   console.log('Welcome to the Brain Games!');
 
-    export let userName = readlineSync.question('May I have your name? ');
-    console.log('Hello ' + userName + '!');
+console.log('Welcome to the Brain Games!');
+ 
+export let userName = readlineSync.question('May I have your name? ');
+ 
+    function runGame(greetings, generatParams, generatQuestion, calcAnswer, whenError) {
+
+    console.log('Hello, ' + userName + '!');
     
     console.log(greetings);
 
-    const getAnswer = () => readlineSync.question('Your answer: ');
- 
-    function runGame(generatParams, generatQuestion, calcAnswer) {
+    const getAnswer = () => readlineSync.question('Your answer: ');   
     
     let rightAnswer = 0;
 
@@ -41,4 +41,5 @@ import { whenError } from './games/brain-gcd-lib.js';
      console.log('Congratulations, ' + userName + '!');
     };
     export default runGame;
+
    
