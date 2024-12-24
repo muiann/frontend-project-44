@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import {generatParams} from '../src/games/brain-even-lib.js';
+import generatParams from '../src/games/brain-even-lib.js';
 import {calcAnswer} from '../src/games/brain-even-lib.js';
 import {generatQuestion} from '../src/games/brain-even-lib.js';
 
