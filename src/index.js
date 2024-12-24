@@ -1,15 +1,17 @@
 
 import readlineSync from 'readline-sync';
 
+
 console.log('Welcome to the Brain Games!');
  
 export let userName = readlineSync.question('May I have your name? ');
+
  
     function runGame(greetings, generatParams, generatQuestion, calcAnswer, whenError) {
 
-    console.log('Hello, ' + userName + '!');
+      console.log('Hello, ' + userName + '!');
     
-    console.log(greetings);
+      console.log(greetings);
 
     const getAnswer = () => readlineSync.question('Your answer: ');   
     

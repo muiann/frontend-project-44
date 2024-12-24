@@ -1,4 +1,4 @@
-export const generatParams = () => Math.floor(Math.random()* (100-1)+1); 
+const generatParams = () => Math.floor(Math.random()* (100-1)+1); 
 
 export const calcAnswer = (params) => {
     if (params % 2 === 0){
@@ -15,3 +15,4 @@ export const calcAnswer = (params) => {
     }
 
 export let greetings = 'Answer "yes" if the number is even, otherwise answer "no".';
+export default generatParams;
