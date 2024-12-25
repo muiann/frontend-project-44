@@ -23,7 +23,7 @@ export let userName = readlineSync.question('May I have your name?');
 
       let question = generatQuestion(params);
 
-      console.log('Question: ', question);
+      console.log('Question:', question);
 
       let userAnswer = getAnswer();
     
