@@ -6,7 +6,7 @@ export const calcAnswer = (params) => {
     }   else{
       return 'no';
   };
- }
+ };
 
  export const generatQuestion = (params) =>{    
     
